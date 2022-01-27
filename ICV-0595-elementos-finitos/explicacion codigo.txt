@@ -1,0 +1,26 @@
+
+Variables 
+
+nodo: variable tipo struct, con campos 'x,  'y'  que definen sus coordenadas espaciales.
+
+elemento: variable tipo struct con los siguientes campos: 'nodos'; un cell array que contiene dos nodos. 'EFT'; con todos los grados de libertad a los que está asociado el elemento (en numeración global). También posee los campos 'longitud', 'ángulo', 'tag', y matrices de masa y rigidez elementales. 
+
+
+Pseudocodigo truss
+
+cargar listas de adyacencia (nodos pertenecientes a cada elemento, grados de libertad pertenecients a cada nodo).
+
+construcción de los elementos: llamada a función get_Ke_n_Me que calcula longitud de elemento, ángulo, matriz de rigidez elemental y matriz de masa elemental  tomando como argumento únicamente el par de nodos correspondientes al elemento.
+
+ensamblaje de las matrices K y M globales: se suman las contribuciones de cada elemento a ciertas posiciones de la matriz global K (inicializada a cero). Es necesario basarse en los grados de libertad al que está asociado cada elemento (simplemente se accede al campo 'EFT' de cada instancia de elemento). EL mismo procedimiento se realiza para M.
+
+Solución al sistema matricial: aplicar condiciones de contorno en vector de solución u. Con esto se conoce u en los dos primeros timesteps. 
+
+Se resuelve iterativamente el sistema [M]{u''} + [K]{u} = {f} para cada timestep iniciando desde el 3.
+
+
+
+
+
+
+

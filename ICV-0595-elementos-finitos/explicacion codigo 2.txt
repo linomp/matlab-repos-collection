@@ -1,0 +1,23 @@
+Pseudocodigo truss
+
+- cargar listas de adyacencia (nodos pertenecientes a cada elemento, grados de libertad pertenecients a cada nodo).
+
+- para cada elemento:
+ 	- calcular longitud y ángulo
+	- obtener matriz de rigidez elemental
+	- obtener matriz de masa elemental  
+
+- ensamblaje de las matrices K y M globales 
+
+- aplicar condiciones de contorno en vector de solución u. 
+
+for t = 3:maxTimeSteps
+	- evaluar las fuerzas f1(t) y f2(t).
+	- resolver sistema [M]{u''} + [K]{u} = {f} en este timestep 
+end
+
+
+
+
+
+

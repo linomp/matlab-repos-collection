@@ -1,0 +1,15 @@
+[submodule "matlab-from-the-basics"]
+	path = matlab-from-the-basics
+	url = https://github.com/linomp/matlab-from-the-basics
+[submodule "connect-arduino-matlab"]
+	path = connect-arduino-matlab
+	url = https://github.com/linomp/connect-arduino-matlab
+[submodule "matlab-gtr-effects"]
+	path = matlab-gtr-effects
+	url = https://github.com/linomp/matlab-gtr-effects
+[submodule "shell_and_tube_hx_design"]
+	path = shell_and_tube_hx_design
+	url = https://github.com/linomp/shell_and_tube_hx_design
+[submodule "fin_design"]
+	path = fin_design
+	url = https://github.com/linomp/fin_design

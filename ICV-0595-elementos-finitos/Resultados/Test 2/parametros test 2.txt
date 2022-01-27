@@ -1,0 +1,17 @@
+ % Material & section properties
+A = ((5.87e-2)*pi^2); %[m^2] cross section of all beams
+E = 200e9; % [Pa] young modulus
+rho = 7850; % [kg/m^3] density
+L = [3 3 3]; % [m] height of each floor
+a = 3; % [m] base dimension
+T = 10; % [sg] simulationt time
+
+% Other problem data
+n_dofs = 22;
+dt = (1e-3) / 1.5;
+omega_1 = (pi*2); % [rad] force 1 freq.
+theta_1 = 120 * pi/180; % [rad] force 1 angle
+A1 = 1e14; % force 1 amplitude
+omega_2 = (pi*2); % [rad] force 2 freq.
+theta_2 = 90 * pi/180; % [rad] force 2 angle
+A2 = 1e14; % force 2 amplitude
