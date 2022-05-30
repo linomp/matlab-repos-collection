@@ -3,7 +3,7 @@
 ### Educational Material
 - [matlab-from-the-basics](https://github.com/linomp/matlab-from-the-basics): Materials from the week-long Matlab course that I gave in 2019 for ASME-USFQ, aimed at engineering students. 
 
-### Utility scripts
+### Useful programs
 - [connect-arduino-matlab](https://github.com/linomp/connect-arduino-matlab): Minimal working code for sending analog sensor readings from an Arduino board to Matlab via serial port. 
 - [matlab-gtr-effects](https://github.com/linomp/matlab-gtr-effects): Apply sick guitar effects to your guitar tracks in Matlab.
 
